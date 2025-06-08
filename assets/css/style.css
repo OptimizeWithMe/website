@@ -122,6 +122,12 @@ header .navbar ul li a:hover {
   padding: 0.5rem 0;
 }
 /* navbar ends */
+@media (max-width: 600px) {
+  .home {
+    padding-top: 9rem;
+  }
+}
+
 
 /* hamburger icon starts*/
 #menu {
@@ -186,6 +192,7 @@ header .navbar ul li a:hover {
   gap: 1.5rem;
   min-height: 100vh;
   align-items: center;
+  padding-top: 8rem;
 }
 .home #particles-js {
   position: absolute;
