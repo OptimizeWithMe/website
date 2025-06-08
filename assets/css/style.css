@@ -209,29 +209,27 @@ header .navbar ul li a:hover {
 }.home .image {
   flex: 1 1 40rem;
   z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; /* ensures image inside is centered */
-  padding: 1rem;       /* optional padding */
+  display: flex;           /* center image inside container */
+  justify-content: center; /* optional */
+  align-items: center;     /* optional */
 }
 
-
 .home .image img {
-  width: 400px;
-  height: 400px;
+  width: 400px;      /* increased from 300px */
+  height: 400px;     /* increased from 300px */
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  margin: 0 auto;        /* center horizontally */
+  margin-left: 0;
   transition: box-shadow 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .home {
-    flex-direction: column-reverse; /* image below text on small screens */
+@media (max-width: 600px) {
+  .home .image img {
+    width: 60vw;  /* smaller on very small screens */
   }
+}
 
 
 
@@ -241,7 +239,7 @@ header .navbar ul li a:hover {
 }
 
 .home .content h2 {
-  font-size: 4.6rem;
+  font-size: 4rem;
   font-weight: 800;
   color: #002057;
 }
