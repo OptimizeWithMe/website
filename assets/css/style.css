@@ -209,25 +209,27 @@ header .navbar ul li a:hover {
 }.home .image {
   flex: 1 1 40rem;
   z-index: 1;
-  display: flex;           /* center image inside container */
-  justify-content: center; /* optional */
-  align-items: center;     /* optional */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 .home .image img {
-  width: 400px;      /* increased from 300px */
-  height: 400px;     /* increased from 300px */
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  margin-left: 0;
   transition: box-shadow 0.3s ease;
 }
 
-@media (max-width: 600px) {
+/* Responsive fix for mobile */
+@media (max-width: 768px) {
   .home .image img {
-    width: 60vw;  /* smaller on very small screens */
+    width: 70vw;
+    height: 70vw; /* maintain circle by equal width/height */
   }
 }
 
