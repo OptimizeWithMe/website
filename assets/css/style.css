@@ -124,32 +124,34 @@ header .navbar ul li a:hover {
 /* navbar ends */
 @media (max-width: 768px) {
   .home {
-    flex-direction: column;  /* Stack content and image */
+    flex-direction: column;
+    padding: 7rem 1rem 2rem; /* give space below navbar */
     text-align: center;
   }
 
-  .home .content {
-    padding: 1rem;
-    order: 1; /* keep content above image */
+  .home .content,
+  .home .image {
+    flex: 1 1 100%;
+    padding: 1rem 0;
   }
 
-  .home .image {
-    margin-top: 2rem;
-    order: 2;
+  .home .image img {
+    width: 70vw;
+    height: 70vw;
   }
 
   .home .btn {
-    display: inline-block;
     margin-top: 1.5rem;
   }
 
   .home .content h2,
-  .home .content p {
-    font-size: 2.2rem;
+  .home .content h2 span {
+    font-size: 2.5rem;
   }
 
+  .home .content p,
   .home .content p span {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -299,7 +301,7 @@ header .navbar ul li a:hover {
   padding: 1rem 0;
 }
 .home .btn {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   position: absolute;
   line-height: 0;
   padding: 1.6rem 3rem;
