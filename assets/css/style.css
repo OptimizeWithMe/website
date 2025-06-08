@@ -227,6 +227,10 @@ header .navbar ul li a:hover {
 
 /* Responsive fix for mobile */
 @media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
   .home .image img {
     width: 70vw;
     height: 70vw; /* maintain circle by equal width/height */
